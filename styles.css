@@ -1,0 +1,194 @@
+html {
+  margin: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.container{
+  max-width: 1157px;
+  margin-left: auto;  
+  margin-right: auto;
+  padding:0 20px;
+  background-color: rgb(0, 0, 0);
+}
+
+
+.header-top{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.logo-wrapper{
+  display: flex;
+  align-items: center;
+  margin-right: 98px;
+}
+
+.logo{
+  width: 25px;
+  height: 25px;
+  margin-right: 12px;
+}
+
+.title-site{
+  color: #FFF;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* sidebar */
+.sidebar{
+  display: flex;
+  align-items: center;
+}
+
+.bar-item{
+  margin-right: 65px;
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+/* input search */
+.label-site-search{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.serch-icon-wrapper{
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.header-site-search{
+  display: none;
+  position: absolute;
+  left: 0;
+  max-width: 120px;
+  background-color: transparent;
+  border: none;
+  border-bottom:1px solid rgba(255, 255, 255, 0.529) ;
+  outline: none;
+  color: rgba(255, 255, 255, 0.663);
+  transition: all .4s;
+}
+
+.db-block{
+  display: block;
+}
+
+.korzinka{
+  margin-left: 40px;
+}
+
+
+
+/* moslashuvchanlik */
+/* 1150 */
+@media only screen and (max-width: 1150px){
+  .logo-wrapper{
+    margin-right: 70px;
+  }
+  .bar-item{
+    margin-right: 50px;
+  }
+  .korzinka{
+    margin-left: 35px;
+  }
+}
+
+/* 1056 */
+@media only screen and (max-width: 1056px){
+  .logo-wrapper{
+    margin-right: 50px;
+  }
+  .bar-item{
+    margin-right: 35px;
+  }
+  .korzinka{
+    margin-left: 30px;
+  }
+}
+
+
+
+/* 956  rasim razmerlarini ozgartirildi*/
+@media only screen and (max-width: 956px){
+  .logo-wrapper{
+    margin-right: 50px;
+  }
+  .logo{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .title-site{
+    font-size: 28px;
+  }
+  .bar-item{
+    margin-right: 35px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .search-icon{
+    width: 26px;
+    height: 26px;
+  }
+  .korzinka-icon{
+    width: 33px;
+    height: 33px;
+  }
+
+  .header-site-search{
+    max-width: 100px;
+    font-size: 17px;
+    top: 5px;
+  }
+  
+
+  .korzinka{
+    margin-left: 25px;
+  }
+}
+
+
+
+
+/* 855 */
+@media only screen and (max-width: 850px){
+ 
+}
